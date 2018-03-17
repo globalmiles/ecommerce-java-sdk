@@ -1,5 +1,5 @@
 /*
- * GlobalMilesECommerceAPILib
+ * GlobalMilesEcommerceAPILib
  *
  * This file was automatically generated for Global Miles by APIMATIC v2.0 ( https://apimatic.io ).
  */
@@ -11,7 +11,7 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class StartPointPaymentResponse 
         extends Response {
-    private static final long serialVersionUID = 5189369545015871714L;
+    private static final long serialVersionUID = 4652829693088204364L;
     private StartPointPaymentResult result;
     /** GETTER
      * Result object of the response.

@@ -1,5 +1,5 @@
 /*
- * GlobalMilesECommerceAPILib
+ * GlobalMilesEcommerceAPILib
  *
  * This file was automatically generated for Global Miles by APIMATIC v2.0 ( https://apimatic.io ).
  */
@@ -11,7 +11,7 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class CancelReturnRequest 
         implements java.io.Serializable {
-    private static final long serialVersionUID = 5225808752997830729L;
+    private static final long serialVersionUID = 4907821921887626754L;
     private String storeCode;
     private String returnProvisionToken;
     /** GETTER

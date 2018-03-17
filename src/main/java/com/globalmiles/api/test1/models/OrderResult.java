@@ -1,5 +1,5 @@
 /*
- * GlobalMilesECommerceAPILib
+ * GlobalMilesEcommerceAPILib
  *
  * This file was automatically generated for Global Miles by APIMATIC v2.0 ( https://apimatic.io ).
  */
@@ -11,7 +11,7 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class OrderResult 
         implements java.io.Serializable {
-    private static final long serialVersionUID = 5653180552430562847L;
+    private static final long serialVersionUID = 5357383559716286455L;
     private String transactionToken;
     /** GETTER
      * A token represents an order object from Global Miles system.

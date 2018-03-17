@@ -1,5 +1,5 @@
 /*
- * GlobalMilesECommerceAPILib
+ * GlobalMilesEcommerceAPILib
  *
  * This file was automatically generated for Global Miles by APIMATIC v2.0 ( https://apimatic.io ).
  */
@@ -11,7 +11,7 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class PaymentItem 
         implements java.io.Serializable {
-    private static final long serialVersionUID = 4804803839473597136L;
+    private static final long serialVersionUID = 5092609782800257852L;
     private PaymentTypeEnum type;
     private double amount;
     private String paymentProvisionToken;

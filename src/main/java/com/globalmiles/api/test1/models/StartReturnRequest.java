@@ -1,5 +1,5 @@
 /*
- * GlobalMilesECommerceAPILib
+ * GlobalMilesEcommerceAPILib
  *
  * This file was automatically generated for Global Miles by APIMATIC v2.0 ( https://apimatic.io ).
  */
@@ -11,7 +11,7 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class StartReturnRequest 
         implements java.io.Serializable {
-    private static final long serialVersionUID = 4871779795164327799L;
+    private static final long serialVersionUID = 4877970743346960255L;
     private String storeCode;
     private String transactionId;
     private Amount amount;
