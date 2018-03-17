@@ -1,5 +1,5 @@
 /*
- * GlobalMilesECommerceAPILib
+ * GlobalMilesEcommerceAPILib
  *
  * This file was automatically generated for Global Miles by APIMATIC v2.0 ( https://apimatic.io ).
  */
@@ -83,7 +83,7 @@ public class AuthenticationController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-            private static final long serialVersionUID = 4884537789361555076L;
+            private static final long serialVersionUID = 5209935552203198203L;
             {
                     put( "Accept", accept );
                     put( "Content-Type", contentType );

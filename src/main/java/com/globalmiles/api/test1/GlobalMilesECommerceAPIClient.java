@@ -1,5 +1,5 @@
 /*
- * GlobalMilesECommerceAPILib
+ * GlobalMilesEcommerceAPILib
  *
  * This file was automatically generated for Global Miles by APIMATIC v2.0 ( https://apimatic.io ).
  */
@@ -8,7 +8,7 @@ package com.globalmiles.api.test1;
 import com.globalmiles.api.test1.controllers.*;
 import com.globalmiles.api.test1.http.client.HttpClient;
 
-public class GlobalMilesECommerceAPIClient {
+public class GlobalMilesEcommerceAPIClient {
     /**
      * Singleton access to PayWithMilesPoints controller
      * @return	Returns the PayWithMilesPointsController instance 
@@ -18,11 +18,11 @@ public class GlobalMilesECommerceAPIClient {
     }
 
     /**
-     * Singleton access to Transaction controller
-     * @return	Returns the TransactionController instance 
+     * Singleton access to EarnMilesPoints controller
+     * @return	Returns the EarnMilesPointsController instance 
      */
-    public TransactionController getTransaction() {
-        return TransactionController.getInstance();
+    public EarnMilesPointsController getEarnMilesPoints() {
+        return EarnMilesPointsController.getInstance();
     }
 
     /**
@@ -75,13 +75,13 @@ public class GlobalMilesECommerceAPIClient {
     /**
      * Default constructor 
      */     
-    public GlobalMilesECommerceAPIClient() {
+    public GlobalMilesEcommerceAPIClient() {
     }
 
     /**
      * Client initialization constructor 
      */     
-    public GlobalMilesECommerceAPIClient(String oAuthClientId, String oAuthClientSecret) {
+    public GlobalMilesEcommerceAPIClient(String oAuthClientId, String oAuthClientSecret) {
         this();
         Configuration.oAuthClientId = oAuthClientId;
         Configuration.oAuthClientSecret = oAuthClientSecret;

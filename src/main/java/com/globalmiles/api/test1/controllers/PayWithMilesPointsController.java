@@ -1,5 +1,5 @@
 /*
- * GlobalMilesECommerceAPILib
+ * GlobalMilesEcommerceAPILib
  *
  * This file was automatically generated for Global Miles by APIMATIC v2.0 ( https://apimatic.io ).
  */
@@ -97,19 +97,19 @@ public class PayWithMilesPointsController extends BaseController {
 
         //process query parameters
         APIHelper.appendUrlWithQueryParameters(_queryBuilder, new HashMap<String, Object>() {
-            private static final long serialVersionUID = 5524008780959048553L;
+            private static final long serialVersionUID = 5289839266262425458L;
             {
-                    put( "Store Code", storeCode );
-                    put( "Filter By Created_At", filterByCreatedAt );
-                    put( "Filter By Status", filterByStatus );
-                    put( "Sort By", sortBy );
+                    put( "StoreCode", storeCode );
+                    put( "FilterByCreatedAt", filterByCreatedAt );
+                    put( "FilterByStatus", filterByStatus );
+                    put( "SortBy", sortBy );
             }});
         //validate and preprocess url
         String _queryUrl = APIHelper.cleanUrl(_queryBuilder);
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-            private static final long serialVersionUID = 5250805863569646987L;
+            private static final long serialVersionUID = 5119329740656267240L;
             {
                     put( "Accept", accept );
                     put( "Content-Type", contentType );
@@ -228,7 +228,7 @@ public class PayWithMilesPointsController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-            private static final long serialVersionUID = 5449186951911539374L;
+            private static final long serialVersionUID = 5200266098035155869L;
             {
                     put( "Accept", accept );
                     put( "Content-Type", contentType );
@@ -347,7 +347,7 @@ public class PayWithMilesPointsController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-            private static final long serialVersionUID = 5763265531889511596L;
+            private static final long serialVersionUID = 5570734079807121697L;
             {
                     put( "Accept", accept );
                     put( "Content-Type", contentType );
@@ -466,7 +466,7 @@ public class PayWithMilesPointsController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-            private static final long serialVersionUID = 5556858759069273729L;
+            private static final long serialVersionUID = 5697452869119708167L;
             {
                     put( "Accept", accept );
                     put( "Content-Type", contentType );
@@ -585,7 +585,7 @@ public class PayWithMilesPointsController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-            private static final long serialVersionUID = 4760210749739824359L;
+            private static final long serialVersionUID = 4766315868947923878L;
             {
                     put( "Accept", accept );
                     put( "Content-Type", contentType );

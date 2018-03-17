@@ -1,5 +1,5 @@
 /*
- * GlobalMilesECommerceAPILib
+ * GlobalMilesEcommerceAPILib
  *
  * This file was automatically generated for Global Miles by APIMATIC v2.0 ( https://apimatic.io ).
  */
@@ -17,7 +17,7 @@ public enum PaymentTypeEnum {
     DIGITAL_WALLET, //Digital Wallet
     MOBILE_PAYMENT, //Mobile Payment
     GIFT_CARD, //Gitf Card
-    POINT_PAYMENT, //Point Payment provided by Global Miles
+    POINT_PAYMENT, //Pay with miles / points provided by Global Miles
     OTHER; //Other
 
     private static TreeMap<String, PaymentTypeEnum> valueMap = new TreeMap<String, PaymentTypeEnum>();

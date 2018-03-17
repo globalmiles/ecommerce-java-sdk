@@ -1,5 +1,5 @@
 /*
- * GlobalMilesECommerceAPILib
+ * GlobalMilesEcommerceAPILib
  *
  * This file was automatically generated for Global Miles by APIMATIC v2.0 ( https://apimatic.io ).
  */
@@ -11,7 +11,7 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class CancelPointPaymentRequest 
         implements java.io.Serializable {
-    private static final long serialVersionUID = 4991442195380632631L;
+    private static final long serialVersionUID = 5746749958623880776L;
     private String storeCode;
     private String paymentProvisionToken;
     /** GETTER

@@ -1,5 +1,5 @@
 /*
- * GlobalMilesECommerceAPILib
+ * GlobalMilesEcommerceAPILib
  *
  * This file was automatically generated for Global Miles by APIMATIC v2.0 ( https://apimatic.io ).
  */
@@ -43,7 +43,7 @@ public class Configuration {
     public static String getBaseUri(Servers server) {
         StringBuilder baseUrl = new StringBuilder(environmentsMap.get(Configuration.environment).get(server));
         Map<String, Object> parameters = new HashMap<String, Object>() {
-            private static final long serialVersionUID = 4628307901344815787L;
+            private static final long serialVersionUID = 5149710471533964784L;
             {
             }
         };
@@ -63,10 +63,10 @@ public class Configuration {
      * Map of all base URLs by environments and server aliases 
      */
     private static EnumMap<Environments, EnumMap<Servers, String>> environmentsMap = new EnumMap<Environments, EnumMap<Servers,String>>(Environments.class) {
-        private static final long serialVersionUID = 5507600870118179907L;
+        private static final long serialVersionUID = 5512895001810822550L;
         {
             put(Environments.CLOUD , new EnumMap<Servers, String>(Servers.class) {
-                private static final long serialVersionUID = 4925784896945416706L;
+                private static final long serialVersionUID = 5161290609435111235L;
                 {
                     put(Servers.DEFAULT, "https://test1.api.globalmiles.com");
                 }

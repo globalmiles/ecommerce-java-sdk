@@ -1,5 +1,5 @@
 /*
- * GlobalMilesECommerceAPILib
+ * GlobalMilesEcommerceAPILib
  *
  * This file was automatically generated for Global Miles by APIMATIC v2.0 ( https://apimatic.io ).
  */
@@ -11,7 +11,7 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class CartItemDiscount 
         implements java.io.Serializable {
-    private static final long serialVersionUID = 5143938785332399093L;
+    private static final long serialVersionUID = 4841193011942003286L;
     private String id;
     private double discount;
     /** GETTER
