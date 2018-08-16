@@ -1,5 +1,5 @@
 /*
- * GlobalMilesEcommerceAPILib
+ * GlobalMilesECommerceAPILib
  *
  * This file was automatically generated for Global Miles by APIMATIC v2.0 ( https://apimatic.io ).
  */
@@ -84,7 +84,7 @@ public class OAuthAuthorizationController extends BaseController {
 
                 //load all headers for the outgoing API request
                 Map<String, String> _headers = new HashMap<String, String>() {
-                    private static final long serialVersionUID = 5533383901520140585L;
+                    private static final long serialVersionUID = -1037656787L;
                     {
                         put( "Authorization", authorization );
                         put( "user-agent", "APIMATIC 2.0" );
@@ -94,7 +94,7 @@ public class OAuthAuthorizationController extends BaseController {
 
                 //load all fields for the outgoing API request
                 Map<String, Object> _parameters = new HashMap<String, Object>() {
-                    private static final long serialVersionUID = 5725344182063619751L;
+                    private static final long serialVersionUID = -5445174831353653120L;
                     {
                         put( "grant_type", "client_credentials" );
                         put( "scope", scope );

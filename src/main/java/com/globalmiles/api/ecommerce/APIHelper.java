@@ -1,5 +1,5 @@
 /*
- * GlobalMilesEcommerceAPILib
+ * GlobalMilesECommerceAPILib
  *
  * This file was automatically generated for Global Miles by APIMATIC v2.0 ( https://apimatic.io ).
  */
@@ -19,7 +19,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
- 
+
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.core.JsonParser;
@@ -28,7 +28,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.globalmiles.api.ecommerce.exceptions.APIException;
-import com.mashape.unirest.http.Unirest;
+
 public class APIHelper {
     /* used for async execution of API calls using a thread pool */
     private static ExecutorService scheduler = null;
@@ -52,11 +52,6 @@ public class APIHelper {
     public static void shutdown() {
         if(null != scheduler) {
             scheduler.shutdown();
-        }
-        try {
-            Unirest.shutdown();
-        } catch (IOException e) {
-            //do nothing
         }
     }
 
@@ -262,7 +257,7 @@ public class APIHelper {
      * @param   value   Value for the form fields
      * @return  Dictionary of form fields created from array elements
      */
-	public static List<SimpleEntry<String, Object>> prepareFormFields(Object value) {
+    public static List<SimpleEntry<String, Object>> prepareFormFields(Object value) {
         List<SimpleEntry<String, Object>> formFields = new ArrayList<SimpleEntry<String, Object>>();
         if(value != null) {
             try {
@@ -280,7 +275,7 @@ public class APIHelper {
      * @param objBuilder
      */
     private static void encodeObjectAsQueryString(String name, Object obj, StringBuilder objBuilder) {
-    	try {
+        try {
             if(obj == null)
                 return;
 
@@ -288,7 +283,7 @@ public class APIHelper {
             objectToList(name, obj, objectList, new HashSet<Integer>());
             boolean hasParam = false;
 
-			List<String> arrays = new ArrayList<String>();
+            List<String> arrays = new ArrayList<String>();
                         
             for (SimpleEntry<String, Object> pair : objectList) {
                 String paramKeyValPair;
@@ -300,8 +295,8 @@ public class APIHelper {
 
                 hasParam = true;
                 //load element value as string
-	            paramKeyValPair = String.format("%s=%s&", accessor, tryUrlEncode(value.toString()));
-	            objBuilder.append(paramKeyValPair);
+                paramKeyValPair = String.format("%s=%s&", accessor, tryUrlEncode(value.toString()));
+                objBuilder.append(paramKeyValPair);
 
             }
 
@@ -390,8 +385,8 @@ public class APIHelper {
             //append all elements in the array into a string
             int index = 0;
             for (Object element : array) {
-            	//load key value pair
-				String key = String.format("%s[%d]", objName, index++);
+                //load key value pair
+                String key = String.format("%s[%d]", objName, index++);
                 loadKeyValuePairForEncoding(key, element, objectList, processed);
             }
         } else if(obj.getClass().isArray()) {
@@ -408,7 +403,7 @@ public class APIHelper {
                 loadKeyValuePairForEncoding(key, element, objectList, processed);
             }
          } else if(obj instanceof Map) {
-        	 //process map
+             //process map
             Map<?, ?> map = (Map<?, ?>) obj;
             //append all elements in the array into a string
             for (Map.Entry<?, ?> pair : map.entrySet()) {

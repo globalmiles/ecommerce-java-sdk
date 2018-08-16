@@ -1,5 +1,5 @@
 /*
- * GlobalMilesEcommerceAPILib
+ * GlobalMilesECommerceAPILib
  *
  * This file was automatically generated for Global Miles by APIMATIC v2.0 ( https://apimatic.io ).
  */
@@ -13,5 +13,6 @@ public enum HttpMethod {
     POST,
     PUT,
     PATCH,
-    DELETE
+    DELETE,
+    HEAD
 }

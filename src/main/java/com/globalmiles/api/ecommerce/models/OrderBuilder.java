@@ -1,5 +1,5 @@
 /*
- * GlobalMilesEcommerceAPILib
+ * GlobalMilesECommerceAPILib
  *
  * This file was automatically generated for Global Miles by APIMATIC v2.0 ( https://apimatic.io ).
  */
@@ -16,6 +16,22 @@ public class OrderBuilder {
      */
     public OrderBuilder() {
         order = new Order();
+    }
+
+    /**
+     * The ID of the transaction that represents the order.
+     */
+    public OrderBuilder transactionId(String transactionId) {
+        order.setTransactionId(transactionId);
+        return this;
+    }
+
+    /**
+     * The date and time when the order was completed in partner side.
+     */
+    public OrderBuilder completedAt(String completedAt) {
+        order.setCompletedAt(completedAt);
+        return this;
     }
 
     /**

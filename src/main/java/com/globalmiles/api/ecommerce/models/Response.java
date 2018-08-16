@@ -1,5 +1,5 @@
 /*
- * GlobalMilesEcommerceAPILib
+ * GlobalMilesECommerceAPILib
  *
  * This file was automatically generated for Global Miles by APIMATIC v2.0 ( https://apimatic.io ).
  */
@@ -11,7 +11,7 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class Response 
         implements java.io.Serializable {
-    private static final long serialVersionUID = 5052543483458850054L;
+    private static final long serialVersionUID = -5598286188292022904L;
     private String status;
     private String message;
     /** GETTER

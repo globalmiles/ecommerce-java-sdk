@@ -1,5 +1,5 @@
 /*
- * GlobalMilesEcommerceAPILib
+ * GlobalMilesECommerceAPILib
  *
  * This file was automatically generated for Global Miles by APIMATIC v2.0 ( https://apimatic.io ).
  */
@@ -11,7 +11,7 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class Amount 
         implements java.io.Serializable {
-    private static final long serialVersionUID = 4640240396236029522L;
+    private static final long serialVersionUID = 8216044149601717310L;
     private double value;
     private String currency;
     /** GETTER

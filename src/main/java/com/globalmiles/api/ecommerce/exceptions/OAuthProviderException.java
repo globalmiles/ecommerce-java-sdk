@@ -1,5 +1,5 @@
 /*
- * GlobalMilesEcommerceAPILib
+ * GlobalMilesECommerceAPILib
  *
  * This file was automatically generated for Global Miles by APIMATIC v2.0 ( https://apimatic.io ).
  */
@@ -14,7 +14,7 @@ import com.globalmiles.api.ecommerce.models.*;
 public class OAuthProviderException 
         extends APIException
         implements java.io.Serializable {
-    private static final long serialVersionUID = 5494598227682436900L;
+    private static final long serialVersionUID = 4445140926883579265L;
     private OAuthProviderErrorEnum error;
     private String errorDescription;
     private String errorUri;

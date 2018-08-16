@@ -1,5 +1,5 @@
 /*
- * GlobalMilesEcommerceAPILib
+ * GlobalMilesECommerceAPILib
  *
  * This file was automatically generated for Global Miles by APIMATIC v2.0 ( https://apimatic.io ).
  */
@@ -11,7 +11,9 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class Order 
         implements java.io.Serializable {
-    private static final long serialVersionUID = 5705746515119108608L;
+    private static final long serialVersionUID = 7797070352786784888L;
+    private String transactionId;
+    private String completedAt;
     private double subtotal;
     private double tax;
     private double total;
@@ -19,6 +21,38 @@ public class Order
     private List<OrderItem> items;
     private List<DiscountItem> discounts;
     private List<PaymentItem> payments;
+    /** GETTER
+     * The ID of the transaction that represents the order.
+     */
+    @JsonGetter("transaction_id")
+    public String getTransactionId ( ) { 
+        return this.transactionId;
+    }
+    
+    /** SETTER
+     * The ID of the transaction that represents the order.
+     */
+    @JsonSetter("transaction_id")
+    public void setTransactionId (String value) { 
+        this.transactionId = value;
+    }
+ 
+    /** GETTER
+     * The date and time when the order was completed in partner side.
+     */
+    @JsonGetter("completed_at")
+    public String getCompletedAt ( ) { 
+        return this.completedAt;
+    }
+    
+    /** SETTER
+     * The date and time when the order was completed in partner side.
+     */
+    @JsonSetter("completed_at")
+    public void setCompletedAt (String value) { 
+        this.completedAt = value;
+    }
+ 
     /** GETTER
      * Total value of all order items without tax.
      */

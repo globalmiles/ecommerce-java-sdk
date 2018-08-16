@@ -1,5 +1,5 @@
 /*
- * GlobalMilesEcommerceAPILib
+ * GlobalMilesECommerceAPILib
  *
  * This file was automatically generated for Global Miles by APIMATIC v2.0 ( https://apimatic.io ).
  */
@@ -13,7 +13,8 @@ public enum PaymentStatusEnum {
     STARTED, //Started
     COMPLETED, //Completed
     CANCELLED, //Cancelled
-    REFUNDED; //Refunded
+    REFUNDED, //Refunded
+    USED; //Used
 
     private static TreeMap<String, PaymentStatusEnum> valueMap = new TreeMap<String, PaymentStatusEnum>();
     private String value;
@@ -23,11 +24,13 @@ public enum PaymentStatusEnum {
         COMPLETED.value = "completed";
         CANCELLED.value = "cancelled";
         REFUNDED.value = "refunded";
+        USED.value = "used";
 
         valueMap.put("started", STARTED);
         valueMap.put("completed", COMPLETED);
         valueMap.put("cancelled", CANCELLED);
         valueMap.put("refunded", REFUNDED);
+        valueMap.put("used", USED);
     }
 
     /**

@@ -1,5 +1,5 @@
 /*
- * GlobalMilesEcommerceAPILib
+ * GlobalMilesECommerceAPILib
  *
  * This file was automatically generated for Global Miles by APIMATIC v2.0 ( https://apimatic.io ).
  */
@@ -16,14 +16,6 @@ public class CartBuilder {
      */
     public CartBuilder() {
         cart = new Cart();
-    }
-
-    /**
-     * ISO-4217 3-letter currency code.
-     */
-    public CartBuilder currency(String currency) {
-        cart.setCurrency(currency);
-        return this;
     }
 
     /**
@@ -47,6 +39,14 @@ public class CartBuilder {
      */
     public CartBuilder total(double total) {
         cart.setTotal(total);
+        return this;
+    }
+
+    /**
+     * ISO-4217 3-letter currency code.
+     */
+    public CartBuilder currency(String currency) {
+        cart.setCurrency(currency);
         return this;
     }
 
