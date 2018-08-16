@@ -1,5 +1,5 @@
 <!--
- - GlobalMilesEcommerceAPILib
+ - GlobalMilesECommerceAPILib
  -
  - This file was automatically generated for Global Miles by APIMATIC v2.0 ( https://apimatic.io ).
 -->
@@ -7,12 +7,12 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>GlobalMilesEcommerceAPILib</groupId>
-  <artifactId>GlobalMilesEcommerceAPILib</artifactId>
-  <version>2.0.0</version>
+  <groupId>GlobalMilesECommerceAPILib</groupId>
+  <artifactId>GlobalMilesECommerceAPILib</artifactId>
+  <version>2.1.0</version>
   <packaging>jar</packaging>
 
-  <name>GlobalMilesEcommerceAPILib</name>
+  <name>GlobalMilesECommerceAPILib</name>
 
   <repositories>
     <repository>
@@ -27,9 +27,9 @@
 
   <dependencies>
     <dependency>
-        <groupId>com.github.apimatic</groupId>
-        <artifactId>unirest-java</artifactId>
-        <version>1.5.0</version>
+        <groupId>com.squareup.okhttp3</groupId>
+        <artifactId>okhttp</artifactId>
+        <version>3.10.0</version>
     </dependency>
     <dependency>
         <groupId>com.fasterxml.jackson.core</groupId>

@@ -1,5 +1,5 @@
 /*
- * GlobalMilesEcommerceAPILib
+ * GlobalMilesECommerceAPILib
  *
  * This file was automatically generated for Global Miles by APIMATIC v2.0 ( https://apimatic.io ).
  */
@@ -10,15 +10,15 @@ import java.util.List;
 import java.util.TreeMap;
 
 public enum Servers {
-    DEFAULT; //TODO: Write general description for this element
+    ENUM_DEFAULT; //TODO: Write general description for this element
 
     private static TreeMap<String, Servers> valueMap = new TreeMap<String, Servers>();
     private String value;
 
     static {
-        DEFAULT.value = "default";
+        ENUM_DEFAULT.value = "default";
 
-        valueMap.put("default", DEFAULT);
+        valueMap.put("default", ENUM_DEFAULT);
     }
 
     /**

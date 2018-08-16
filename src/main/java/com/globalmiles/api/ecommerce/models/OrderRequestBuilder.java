@@ -1,5 +1,5 @@
 /*
- * GlobalMilesEcommerceAPILib
+ * GlobalMilesECommerceAPILib
  *
  * This file was automatically generated for Global Miles by APIMATIC v2.0 ( https://apimatic.io ).
  */
@@ -35,26 +35,10 @@ public class OrderRequestBuilder {
     }
 
     /**
-     * The ID of the transaction that represents the order.
-     */
-    public OrderRequestBuilder transactionId(String transactionId) {
-        orderRequest.setTransactionId(transactionId);
-        return this;
-    }
-
-    /**
      * A complex object for order.
      */
     public OrderRequestBuilder order(Order order) {
         orderRequest.setOrder(order);
-        return this;
-    }
-
-    /**
-     * It specifies how many days later the miles should be given to the user.
-     */
-    public OrderRequestBuilder shiftAllowance(Integer shiftAllowance) {
-        orderRequest.setShiftAllowance(shiftAllowance);
         return this;
     }
     /**

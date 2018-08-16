@@ -1,5 +1,5 @@
 /*
- * GlobalMilesEcommerceAPILib
+ * GlobalMilesECommerceAPILib
  *
  * This file was automatically generated for Global Miles by APIMATIC v2.0 ( https://apimatic.io ).
  */
@@ -9,7 +9,7 @@ import com.globalmiles.api.ecommerce.exceptions.*;
 import com.globalmiles.api.ecommerce.http.client.HttpClient;
 import com.globalmiles.api.ecommerce.http.client.HttpContext;
 import com.globalmiles.api.ecommerce.http.client.HttpCallBack;
-import com.globalmiles.api.ecommerce.http.client.UnirestClient;
+import com.globalmiles.api.ecommerce.http.client.OkClient;
 import com.globalmiles.api.ecommerce.http.response.HttpResponse;
 
 public abstract class BaseController {
@@ -47,7 +47,7 @@ public abstract class BaseController {
     public static HttpClient getClientInstance() {
         synchronized (syncObject) {
             if (null == clientInstance) {
-                clientInstance = UnirestClient.getSharedInstance();
+                clientInstance = OkClient.getSharedInstance();
     }
         }
         return clientInstance;

@@ -1,5 +1,5 @@
 /*
- * GlobalMilesEcommerceAPILib
+ * GlobalMilesECommerceAPILib
  *
  * This file was automatically generated for Global Miles by APIMATIC v2.0 ( https://apimatic.io ).
  */
@@ -59,6 +59,19 @@ public interface HttpClient {
      */
     public HttpRequest get(String _queryUrl,
                     Map<String, String> _headers, List<SimpleEntry<String, Object>> _parameters);
+
+    /**
+     * Create a simple HTTP HEAD request with basic authentication
+     */
+    public HttpRequest head(String _queryUrl,
+            Map<String, String> _headers, List<SimpleEntry<String, Object>> _parameters,
+            String _username, String _password);
+
+    /**
+    * Create a simple HTTP HEAD request
+    */
+    public HttpRequest head(String _queryUrl,
+            Map<String, String> _headers, List<SimpleEntry<String, Object>> _parameters);
 
     /**
      * Create an HTTP POST request with parameters

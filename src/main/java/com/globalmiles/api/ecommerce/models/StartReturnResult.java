@@ -1,5 +1,5 @@
 /*
- * GlobalMilesEcommerceAPILib
+ * GlobalMilesECommerceAPILib
  *
  * This file was automatically generated for Global Miles by APIMATIC v2.0 ( https://apimatic.io ).
  */
@@ -11,7 +11,7 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class StartReturnResult 
         implements java.io.Serializable {
-    private static final long serialVersionUID = 5195379357036258495L;
+    private static final long serialVersionUID = -107884873160762027L;
     private String returnProvisionToken;
     /** GETTER
      * A token represents a return object for provisioning.

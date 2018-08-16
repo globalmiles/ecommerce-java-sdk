@@ -1,5 +1,5 @@
 /*
- * GlobalMilesEcommerceAPILib
+ * GlobalMilesECommerceAPILib
  *
  * This file was automatically generated for Global Miles by APIMATIC v2.0 ( https://apimatic.io ).
  */
@@ -11,12 +11,10 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class OrderRequest 
         implements java.io.Serializable {
-    private static final long serialVersionUID = 5749125851395033512L;
+    private static final long serialVersionUID = -4672986795422268924L;
     private String storeCode;
     private String userToken;
-    private String transactionId;
     private Order order;
-    private Integer shiftAllowance = 0;
     /** GETTER
      * An identifier for online store.
      */
@@ -50,22 +48,6 @@ public class OrderRequest
     }
  
     /** GETTER
-     * The ID of the transaction that represents the order.
-     */
-    @JsonGetter("transaction_id")
-    public String getTransactionId ( ) { 
-        return this.transactionId;
-    }
-    
-    /** SETTER
-     * The ID of the transaction that represents the order.
-     */
-    @JsonSetter("transaction_id")
-    public void setTransactionId (String value) { 
-        this.transactionId = value;
-    }
- 
-    /** GETTER
      * A complex object for order.
      */
     @JsonGetter("order")
@@ -79,22 +61,6 @@ public class OrderRequest
     @JsonSetter("order")
     public void setOrder (Order value) { 
         this.order = value;
-    }
- 
-    /** GETTER
-     * It specifies how many days later the miles should be given to the user.
-     */
-    @JsonGetter("shift_allowance")
-    public Integer getShiftAllowance ( ) { 
-        return this.shiftAllowance;
-    }
-    
-    /** SETTER
-     * It specifies how many days later the miles should be given to the user.
-     */
-    @JsonSetter("shift_allowance")
-    public void setShiftAllowance (Integer value) { 
-        this.shiftAllowance = value;
     }
  
 }

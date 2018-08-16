@@ -1,5 +1,5 @@
 /*
- * GlobalMilesEcommerceAPILib
+ * GlobalMilesECommerceAPILib
  *
  * This file was automatically generated for Global Miles by APIMATIC v2.0 ( https://apimatic.io ).
  */
@@ -11,28 +11,12 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class Cart 
         implements java.io.Serializable {
-    private static final long serialVersionUID = 4938840316463737997L;
-    private String currency;
+    private static final long serialVersionUID = -7513471487967840277L;
     private double subtotal;
     private double tax;
     private double total;
+    private String currency;
     private List<CartItem> items;
-    /** GETTER
-     * ISO-4217 3-letter currency code.
-     */
-    @JsonGetter("currency")
-    public String getCurrency ( ) { 
-        return this.currency;
-    }
-    
-    /** SETTER
-     * ISO-4217 3-letter currency code.
-     */
-    @JsonSetter("currency")
-    public void setCurrency (String value) { 
-        this.currency = value;
-    }
- 
     /** GETTER
      * Total value of all cart items without tax.
      */
@@ -79,6 +63,22 @@ public class Cart
     @JsonSetter("total")
     public void setTotal (double value) { 
         this.total = value;
+    }
+ 
+    /** GETTER
+     * ISO-4217 3-letter currency code.
+     */
+    @JsonGetter("currency")
+    public String getCurrency ( ) { 
+        return this.currency;
+    }
+    
+    /** SETTER
+     * ISO-4217 3-letter currency code.
+     */
+    @JsonSetter("currency")
+    public void setCurrency (String value) { 
+        this.currency = value;
     }
  
     /** GETTER
