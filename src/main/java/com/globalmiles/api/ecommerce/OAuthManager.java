@@ -28,6 +28,8 @@ public class OAuthManager {
      */
     private static OAuthManager instance;
 
+    private static final Object syncRoot = new Object();
+
     /**
      * Singleton instance of OAuth 2 API controller 
      */
@@ -46,7 +48,7 @@ public class OAuthManager {
      */
     public static OAuthManager getInstance() {
         if (instance == null) {
-            synchronized (OAuthManager.class) {
+            synchronized (syncRoot) {
                 if (instance == null) {
                     instance = new OAuthManager();
                 }
@@ -126,7 +128,7 @@ public class OAuthManager {
      * @throws Throwable APIException or other exception in case of error
      */
     public void checkAuthorization() throws Throwable {
-        if (Configuration.oAuthToken == null) {
+        if (Configuration.oAuthToken == null || isTokenExpired()) {
             authorize();
             return;
         }
