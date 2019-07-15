@@ -28,21 +28,24 @@ public class OkClient implements HttpClient {
     /**
      * Private variables to implement singleton pattern
      */
-    private static Object synRoot = new Object();
+    private static final Object synRoot = new Object();
     private static HttpClient sharedInstance = null;
-    private static okhttp3.OkHttpClient client = new okhttp3.OkHttpClient();
+    private static okhttp3.OkHttpClient client = new okhttp3.OkHttpClient.Builder()
+            .addInterceptor(new HttpRedirectInterceptor(true)).build();
 
     /**
      * Singleton access to the shared instance
      * @return A shared instance of UnirestClient
      */
     public static HttpClient getSharedInstance() {
-        synchronized (synRoot) {
-            if (sharedInstance == null) {
-                sharedInstance = new OkClient();
+        if (sharedInstance == null) {
+            synchronized(synRoot) {
+                if (sharedInstance == null) {
+                    sharedInstance = new OkClient();
+                }
             }
-            return sharedInstance;
         }
+        return sharedInstance;
     }
 
     /**
@@ -50,8 +53,7 @@ public class OkClient implements HttpClient {
     * @param   timeout    The timeout in seconds
     */
     public void setTimeout(long timeout) {
-        client = client.newBuilder().connectTimeout(timeout, TimeUnit.MILLISECONDS)
-                .writeTimeout(timeout, TimeUnit.MILLISECONDS).readTimeout(timeout, TimeUnit.MILLISECONDS).build();
+        client = client.newBuilder().callTimeout(timeout, TimeUnit.MILLISECONDS).build();
     }
 
     /**
